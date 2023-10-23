@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+
+}
+
+.navbar {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width:100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    top:0;
+    left:0;
+}
+.navbar > button {
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+}
+.content {
+    padding-left: 20px;
+    line-height: 100%;
+}
+.container {
+    
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.container > div {
+    border-style: solid;
+}
+.image {
+    padding-left: 5px;
+    align-content: right;
+}
+.article {
+    border-style: solid;
+    background-color: lightgray;
+
+    padding-bottom: 20px;
+}
+.footer{
+    bottom:0;
+    background-color: gray;
+    position:fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.main{
+    background-color: lightgray;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.main > p{
+    font-size: large;
+}
+    §table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

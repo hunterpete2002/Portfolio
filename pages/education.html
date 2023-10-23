@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education and work experience</title>
+    <link rel="stylesheet" href="../css/mainCss.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <script src="../javascript/modal.js"></script>
+    <script src="../javascript/api.js" defer></script>
+
+
+    <script>
+        //Data for modals in the form of arrays
+        const jääkäriprikaattiArray = [
+            "Jääkäriprikaatti",
+            "Jääkäri Kilpeläinen Petri Aku Johannes on suorittanut varusmiespalveluksensa Jääkäriprikaatissa system adminin ja ohjelmoijan tehtävässä 14.3.2022 - 14.9.2022.",
+            "Jääkäri Kilpeläinen Petri Aku Johannes varusmiespalveluksessa laatimat työt ja tehtävät Jääkäriprikaatissa.",
+            "Virtuaalikoulutustukihenkilöiden kehittämän luokanhallintaohjelmiston päivittäminen ja ylläpito",
+            "Levykloonausohjelmiston FOG käyttö virtuaalikoulutusluokan tietokoneiden ylläpitoon",
+            "Osallisena koodi kirjaston luomisessa, jonka tarkoitus on helpottaa skenaario ohjelmointia",
+            "Ollut osallisena skenaarioiden luonnissa ja muokkauksessa.",
+            "Varusmiesten kouluttamisessa ollut mukana ja toiminut teknisenä tukena",
+            "Alokkaiden VBS3 peruskoulutus",
+            "Sisäampumasimulaattorien asennus, testaaminen ja huoltaminen",
+            "Linux palvelimen päivittäminen ja ongelmien korjaus"
+        ]
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="window.location.href='../main.html'"> Home</button>
+        <button onclick="window.location.href='education.html'"> Education and work experience</button>
+        <button onclick="window.location.href='javascriptExamples.html'"> JavaScript functions</button>
+    </div>
+    <div class="main">
+        <h1>My education</h1>
+        <p>Hello again. This page has my education. Now as i make this website also for a school project i will be using html tables.</p>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>School</th>
+                    <th>Degree</th>
+                    <th>Start date</th>
+                    <th>End date</th>
+                    <th>Avarage grades</th>
+                </tr>
+                <tr>
+                    <th>OAMK, Oulun ammattikorkeakoulu</th>
+                    <th><a href="https://www.oamk.fi/fi/koulutus/ammattikorkeakoulututkinnot/insinoori-amk-tieto-ja-viestintatekniikka">Insinööri (AMK), tietotekniikka</a></th>
+                    <th>25.8.2021</th>
+                    <th>31.7.2026</th>
+                    <th>NaN</th>
+                </tr>
+                <tr>
+                    <th>Ammattiopisto Lappia</th>
+                    <th><a href="https://www.lappia.fi/kurssi/tieto-ja-viestintatekniikan-perustutkinto-tietoverkkoasentaja-tai-it-tukihenkilo/">Tieto- ja viestintätekniikan perustutkinto</a></th>
+                    <th>2.8.2018</th>
+                    <th>4.6.2021</th>
+                    <th>3,69 (From 1-5)</th>
+                </tr>
+            </table>
+        </div>
+        <p>For more information on the degrees click them. I will add an average for OAMK when i have finished it.</p>
+        <h1>My work experience</h1>
+        <p>I will continue using tables however feel free to click my work place to get more information. It will open my reference as a modal.</p>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Job</th>
+                    <th>Title</th>
+                    <th>Short description</th>
+                    <th>Start date</th>
+                    <th>End date</th>
+                </tr>
+                <tr>
+                    <th><button onclick="modalFunc(jääkäriprikaattiArray)">Jääkäriprikaatti</button></th>
+                    <th>Sysadmin and programmer</th>
+                    <th>I worked as a sysadmin as well as a programmer in simulation creation and training.</th>
+                    <th>14.3.2022</th>
+                    <th>14.9.2022</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <h3 id="apiText">Place holder</p>    
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modalHeader">Modal header </h2>
+          <ul id="modalContent">
+
+          </ul>
+        </div>  
+    </div>
+
+</body>
+</html>

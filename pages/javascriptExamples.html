@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Examples</title>
+    <link rel="stylesheet" href="../css/mainCss.css">
+    <script src="../javascript/api.js" defer></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="window.location.href='../main.html'"> Home</button>
+        <button onclick="window.location.href='education.html'"> Education and work experience</button>
+        <button onclick="window.location.href='javascriptExamples.html'"> JavaScript functions</button>
+    </div>
+
+    <div class="main">
+        <h1>Javascript fun</h1>
+        <p>Hello there. This page is more for showcasing the javascript on the page. I will list them below with a small explanation and with images of code.</p>
+        <p>As you might have noticed on my footer there is a text that changes every 30 seconds. This text comes from an API called <a href="https://rapidapi.com/divad12/api/numbers-1/">Numbers.</a> It returns trivia of random numbers in a json that i then fomatted to be used.</p>
+        <p>The only other javascript on my page is in my education and work experience tab. To be exact it is the button for my old jobs. I created a modal that takes an array as a variable then uses the data in the array to create exact amount of elements needed. I do this with a simple loop going through the array.</p>
+    
+        <div class="container">
+            <div id="api">
+                <p>The code for the API</p>
+                <img src="../api.png" alt="Picture of my API code." width="500" height="400">
+            </div>
+            <div id="modal">
+                <p>The code for the modal</p>
+                <img src="../modal.png" alt="Picture of my Modal code" width="300" height="400">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3 id="apiText">Place holder</p>    
+    </div>
+
+</body>
+</html>
